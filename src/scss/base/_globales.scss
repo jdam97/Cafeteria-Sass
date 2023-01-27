@@ -1,0 +1,41 @@
+@use 'variables' as v; //con el "as v" le damos un nombre corto a esa variable, siendo asi variavles = v
+html{
+    font-size: 62.5%; // recordar que convierte 1 rem en 10px
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$fuente_secundaria;//es necesario primero colocar el nombre del archivo luego el . y la variable a usar
+    font-size: 1.6rem;
+    background-color: v.$cafeClaro;
+}
+
+p{
+   color: v.$negro;
+   font-size: 1.6rem;
+   line-height: 2;
+}
+.contenedor{
+    width: 95%; // la caja será del 95% del tamaño que requiera
+    max-width: 120rem; //max tamaño de caja
+    margin: 0 auto; //para centrar caja
+}
+
+a{
+    text-decoration: none; //elimina el delineado de los enlaces
+}
+
+img{
+    max-width: 100%;
+    display: block; //para que tome todo el espacio disponible y no aparezca la linea en la parte inferior de las img
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

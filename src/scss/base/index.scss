@@ -1,0 +1,12 @@
+// @use/@import: los incluyen pero tambien los utilizan
+// @forward: nos sirve para incluir archivos dentro de otros, solo los incluye.
+//forward lo utilizamos para incluir los archibos SASS en el archivo SASS MAIN y así no se vea con el monton de @use.
+@forward 'normalize';
+@forward 'variables'; //no se muestran en el archivo css porque solo estoy definiendo variables y las variables no tienen html
+@forward 'mixins';
+@forward 'globales';
+@forward 'tipografia';
+@forward 'utilidades';
+
+
+

@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+//@use 'sass:math'; de esta manera importo las funciones matematicas que trae SASS.
+ 
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    @include m.tablet { 
+        flex-direction: row;
+        //gap: math.div(v.$separacion, 4); de esta manera se usa, math.div, actualmente solo divide
+        gap: 1rem;
+        margin-top: 0;
+    }
+    a{
+        color: v.$blanco;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        @include m.tablet { 
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            color:v.$secundario;
+        }
+
+        &.activo{   //esto amrca en qué pagina esta neustro usuario
+            color:v.$secundario;   
+        }
+
+
+    }
+
+    
+}

@@ -1,0 +1,25 @@
+//sirven para asignar codigo que se puede re utilizar a una variable y asi usarlo cuando se requiera
+@use 'variables' as v;
+
+@mixin telefono{
+    @media(min-width: v.$telefono){
+        @content; //esto para que mi mixin en la otra hoja, me reciba propiedades
+    }
+}
+@mixin tablet{
+    @media(min-width: v.$tablet){
+        @content; //esto para que mi mixin en la otra hoja, me reciba propiedades
+    }
+}
+@mixin desktop{
+    @media(min-width: v.$desktop){
+        @content; //esto para que mi mixin en la otra hoja, me reciba propiedades
+    }
+}
+
+
+@mixin grid($columnas,$separacion){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap:$separacion;
+}
