@@ -32,7 +32,20 @@ h2{
         background-size: 10rem; //como la imagen mide mas de 10 rem, en esta linea hago que mida esos 10rem ya que en height y width puse 10rem
     }
 }
+.heading-blanco{
+    @extend h2;  // con el extend el .heading-blanco hereda todo lo del h2
+     color: v.$blanco;
 
+     span{
+         color: v.$blanco;
+     }
+
+     &::after{
+         display: none;
+     }
+
+ 
+ }
 h3 { 
     font-size: 3.2rem;
 }
