@@ -5,7 +5,7 @@
 .nuestro-menu{
     background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, v.$primario, v.$primario); //background-image:tambien nos permite colocar colores
     background-repeat: no-repeat;
-    background-position: center 5rem,center 96%, 100%; //el 100% es para el linear-gradient, que ocupe el 100%
+    background-position: center 5rem,center 92%, 100%; //el 100% es para el linear-gradient, que ocupe el 100%
     background-size: 200%;
     padding: 15rem 2rem 20rem 2rem;
 

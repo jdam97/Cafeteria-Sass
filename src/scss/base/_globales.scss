@@ -27,11 +27,13 @@ p{
 
 a{
     text-decoration: none; //elimina el delineado de los enlaces
+    color: v.$negro;
 }
 
 img{
     max-width: 100%;
     display: block; //para que tome todo el espacio disponible y no aparezca la linea en la parte inferior de las img
+    height: auto;
 }
 
 ul{

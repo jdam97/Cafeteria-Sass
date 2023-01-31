@@ -1,5 +1,8 @@
 //aca se colocan todas las carpetas que voy a usar y las enlazo para que sass busque los index en ellas
 @use 'base';//no es necesario colocar base/index porque @use lo busca dentro de la carpeta "base"
 @use 'header';
-@use 'inicio'
+@use 'footer';
+@use 'inicio';
+@use 'internas';
+
 
