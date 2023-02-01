@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Sass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-contacto">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo Cafeteria">
+                </div>
+                <nav class="nav-principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a class="activo" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="texto-header">
+                <h1>Disfruta una deliciosa taza de café</h1>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor contenido-principal ">
+        <h2><span>Reserva</span> tu mesa</h2>
+        <div class="contenido-contacto">
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Tu E-mail">
+                </div>
+
+                <div class="campo">
+                    <label for="opcion">Numero de personas</label>
+                    <select name="" id="opcion" required>
+                        <option value="" disabled selected>--seleccione--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="mas">+4</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Hora</label>
+                    <input type="time" id="hora">
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer bg-white">
+            <div class="footer-box ubicacion" > 
+                <h3>Ubicación</h3>
+                <p>Calle falsa #123</p>
+                <p>Bucaramanga, Colombia</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Reservación</h3>
+                <p>Tel. 3155124686</p>
+                <a href="https://api.whatsapp.com/send?phone=573155124686&text=Hola, Nececito mas informacion!">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lun-Jue:8:00am-5:00pm</p>
+                <p>Vier-Sab:9:00am-6:00pm</p>
+                <p>Domingos:8:00am-2:00pm</p>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+</body>
+</html>

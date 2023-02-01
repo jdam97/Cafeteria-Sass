@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Sass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-menu">
+        <div class="contenido-header contenedor ">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo Cafeteria">
+                </div>
+                <nav class="nav-principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a class="activo" href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="texto-header">
+                <h1>Disfruta nuestro delicioso menú</h1>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor contenido-principal padding-bottom-0">
+        <h2><span>Utilizamos los</span> mejores ingredientes</h2>
+        <div class="contenido-menu">
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, labore odit! Doloribus eum, totam maiores modi iste pariatur repudiandae eligendi ipsum qui vitae sit odio, corporis beatae sequi aliquid asperiores?repudiandae eligendi ipsum qui vitae sit odio, corporis beatae sequi aliquid asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolorem necessitatibus ex et molestiae accusamus nostrum repudiandae dolor sit temporibus voluptatum est consectetur, nisi cum maxime numquam asperiores expedita? Molestiae!</p>
+            </div>
+        </div>
+
+    </main>
+    <section class="nuestro-menu">
+        <h2 class="heading-blanco"><span>Nuestro delicioso</span> Menú</h2>
+        <div class="contenedor grid-menu">
+            <section class="menu cafe">  <!--bebidas -->
+                <h3>Café</h3>
+                <ul>
+                    <li>
+                        <p>Café Latte <span>Café Espresso con leche caliente evaporada</span></p>
+                        <p class="precio">$3.000</p>
+                    </li>
+                    <li>
+                        <p>Café Mocca <span>Espresso con crema batida</span></p>
+                        <p class="precio">$5.000</p>
+                    </li>
+                    <li>
+                        <p>Café Americano <span>Café Negro</span></p>
+                        <p class="precio">$4.000</p>
+                    </li>
+                    <li>
+                        <p>Capuccino<span>Espresso con una capa suave de espuma</span></p>
+                        <p class="precio">$4.500</p>
+                    </li>
+                    <li>
+                        <p>Café Mocca Frio<span>Espresso, dulce con mocha y leche.</span> </p>
+                        <p class="precio">$6.000</p>
+                    </li>
+                    <li>
+                        <p>Mocca Frio Quemado<span>Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
+                        <p class="precio">$5.500</p>
+                    </li>
+                    <li>
+                        <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span> </p>
+                        <p class="precio">$6.000</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- aca terminan bebidas -->
+            <section class="menu comida"> <!--comida -->
+                <h3>Comida</h3>
+                <ul>
+                    <li>
+                        <p>Croissant de Pollo <span>Delicioso croissant con pollo a la plancha</span> </p>
+                        <p class="precio">$3.000</p>
+                    </li>
+                    <li>
+                        <p>Croissant Pollo y Queso <span>Croissant combinado con Pollo y Queso</span> </p>
+                        <p class="precio">$4.000</p>
+                    </li>
+                    <li>
+                        <p>Croissant Pollo y Tocineta<span>Croissant con pollo, especias y verduras, además de tocineta</span> </p>
+                        <p class="precio">$5.000</p>
+                    </li>
+                    <li>
+                        <p>Pastel de Jamón y queso<span>Pastel con Jamón y queso</span> </p>
+                        <p class="precio">$4.000</p>
+                    </li>
+                    <li>
+                        <p>Pastel con Jamón, Queso y Tocineta<span>Pastel con Jamón, queso y tocineta</span> </p>
+                        <p class="precio">$6.000</p>
+                    </li>
+                    <li>
+                        <p>Sandwich de Pollo<span>Especial de la casa</span> </p>
+                        <p class="precio">$9.000</p>
+                    </li>
+                    <li>
+                        <p>Sandwich de Jamón y queso<span>Queso Amarillo con Jamón y Queso</span> </p>
+                        <p class="precio">$8.000</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- aca termina comida -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer bg-white">
+            <div class="footer-box ubicacion" > 
+                <h3>Ubicación</h3>
+                <p>Calle falsa #123</p>
+                <p>Bucaramanga, Colombia</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Reservación</h3>
+                <p>Tel. 3155124686</p>
+                <a href="https://api.whatsapp.com/send?phone=573155124686&text=Hola, Nececito mas informacion!">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lun-Jue:8:00am-5:00pm</p>
+                <p>Vier-Sab:9:00am-6:00pm</p>
+                <p>Domingos:8:00am-2:00pm</p>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+</body>
+</html>
