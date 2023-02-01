@@ -1,9 +1,12 @@
 const { src,dest,watch,series,parallel } = require('gulp'); //si veo llaves al lado del const es porque exporta varias funciones, cuando no, sol o exporta 1 funcion
 
 //Dependencias de CSS y SASS
+//IMPORTACIONES
 const sass = require('gulp-sass')(require('sass'));// aca fueron 2 dependencias
 const postcss=require('gulp-postcss');
 const autoprefixer=require('autoprefixer');
+const sourcemaps=require('gulp-sourcemaps'); //esta dependencia me dice donde está el codigo en sass para ir a modificar en caso de algun cambio más adelante
+const cssnano=require('cssnano'); //no inicia con gulp y sirve para eliminar todo el espacio en blanco del archivo Css y optimizarlo(linea 25)
 
 //Dependencias de IMAGENES
 const imagemin = require('gulp-imagemin');
@@ -16,18 +19,19 @@ function css(done){
 // pasos: 1 - identificar el archivo, 2 - compilarla, 3- guardar el css.
 // paso 1
 src('src/scss/app.scss')
+.pipe(sourcemaps.init())//se debe colocar antes de todo
     // paso 2
     .pipe( sass({outputStyle:'expanded'}) ) //podemos ponerle [{outputStyle:'compressed'}] para que nos compacte el codigo css
-    .pipe(postcss( [ autoprefixer() ] ))
+    .pipe(postcss( [ autoprefixer(),cssnano()] )) //librerias que modifican el codigo css// acá invocamos cssnano
+    .pipe(sourcemaps.write('.'))
     // paso 3
-    .pipe(dest('build/css'))
+    .pipe(dest('build/css')) //esto es para grabar la hoja de estilos de sass ya compilada en css
     done ();
 }
 function imagenes(){
     return src('src/img/**/*') //osea todos los archivos que esten en estas carpetas, puedo usar el reutrn en vez del done
     .pipe(imagemin({optimizationLevel: 3}))
     .pipe( dest('/build/img'));
-    
 }
 
 function versionWebp(){
